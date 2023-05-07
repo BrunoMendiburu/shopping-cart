@@ -1,6 +1,9 @@
 import "./Footer.css"
+import { useFilters } from "../hooks/useFilters.js"
 
 export function Footer() {
+  const { filters } = useFilters()
+
   return (
     <footer className="footer">
       <h4>Esto es un foking footer</h4>
